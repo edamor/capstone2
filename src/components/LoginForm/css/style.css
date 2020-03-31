@@ -1,0 +1,30 @@
+/* electric lime green color code : cefa05 */
+
+
+.loginForm {
+   background-color: #000;
+   z-index: 10;
+   border: #cefa05 1px solid;
+   border-radius: 10%;
+}
+
+.loginBtn {
+   background-color: #cefa05;
+}
+
+.registerText {
+   text-align: center;
+   font-size: smaller;
+   margin-top: 1em;
+   color: #fff;
+}
+
+.registerLink {
+   color: #cefa05;
+   cursor: pointer;
+}
+
+i.fas {
+   color: #cefa05;
+}
+

@@ -1,0 +1,31 @@
+
+.smModalWrap {
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   background: rgba(0,0,0,0.65);
+}
+
+.smModalContent {
+   height: 150px;
+   width: 300px;
+   position: fixed;
+   top: 30%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   background-color: #cefa05;
+   border-radius: 5%;
+   z-index: 10;
+}
+
+
+.smModalText {
+   text-align: center;
+   position: relative;
+   top: 50%;
+   transform: translateY(-50%);
+   font-size: xx-large;
+   color: black;
+}

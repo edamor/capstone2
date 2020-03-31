@@ -1,0 +1,19 @@
+small {
+   color: red;
+}
+
+.regFormWrap {
+   z-index: 20;
+   border-radius: 7%;
+   width: 35%;
+   background-color: #000;
+   border: #cefa05 1px solid;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+#regBtn {
+   background-color: #cefa05;
+   color: #000;
+}

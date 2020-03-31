@@ -1,25 +1,46 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
+import LoginPage from './pages/Login/Index';
+import MainPage from './pages/Main/Index';
+
+
 
 function App() {
+
+  let [isLoggedIn, setIsLoggedIn] = useState(localStorage.getItem("currentUser") ? true : false);
+
+  let logoutHandler = () => {
+    localStorage.clear();
+    setIsLoggedIn(false);
+  }
+
+  let loginHandler = (e) => {
+    setIsLoggedIn(e)
+  }
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Route exact path="/">
+            {
+              isLoggedIn ? <Redirect to="/user" /> 
+              : 
+              (props) => <LoginPage {...props} loginHandler={loginHandler} />
+            }
+          </Route>
+          <Route path="/user">
+            {
+              (props) =>
+              <MainPage
+                {...props}
+                logoutHandler={logoutHandler}
+                isLoggedIn={isLoggedIn}
+              />
+            }
+          </Route>
+      </div>
+    </BrowserRouter>
   );
 }
 

@@ -1,0 +1,17 @@
+.navWrap {
+   background-color: #a9a9a9a9;
+}
+
+.navWrap ul {
+   list-style-type: none;
+}
+
+.navWrap ul li {
+   display: inline-block;
+}
+
+.logoutNavBtn {
+   display: inline-block;
+   margin-left: auto;
+}
+
