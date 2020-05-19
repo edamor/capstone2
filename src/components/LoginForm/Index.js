@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
+import SmallModal from '../SmallModal/Index';
 import './css/style.css';
-import loginLogo from '../../images/weightlifting.png';
 
 
 function LoginForm(props) {
@@ -8,6 +8,13 @@ function LoginForm(props) {
 
    let [username, setUsername] = useState("");
    let [password, setPassword] = useState("");
+
+   let [openModal, setOpenModal] = useState(false);
+   let modalContent = "unable to login";
+
+   let toggleModal = () => {
+      setOpenModal(!openModal)
+   }
 
    let unChangeHandler = (e) => {
       setUsername(e.target.value.trim())
@@ -29,7 +36,7 @@ function LoginForm(props) {
          },
          body: JSON.stringify(user)
       })
-         .then(res => res.json())
+         .then(res => res)
          .then(data => {
             // localStorage.setItem("userRole", data.username);
             console.log(data);
@@ -37,21 +44,22 @@ function LoginForm(props) {
             props.loginHandler(true);
          })
          .catch(e => {
-            alert("Login Failed")
+            toggleModal();
+            console.log(e)
          })
    }
 
 
    return (
       <React.Fragment>
-         <div className="loginForm jumbotron">
-            <form>
+         <div className="loginFormWrap jumbotron">
+            <form className="loginForm">
                <div className="form-group">
                   <div className="input-group">
                      <div className="input-group-prepend">
                         <div className="input-group-text"><i className="fas fa-user"></i></div>
                      </div>
-                     <input className="form-control"
+                     <input className="form-control secondFont"
                         type="text"
                         autoComplete="false"
                         placeholder="username"
@@ -64,7 +72,7 @@ function LoginForm(props) {
                      <div className="input-group-prepend">
                         <div className="input-group-text"><i className="fas fa-lock"></i></div>
                      </div>
-                     <input className="form-control"
+                     <input className="form-control secondFont"
                         type="password"
                         autoComplete="false"
                         placeholder="password"
@@ -74,19 +82,20 @@ function LoginForm(props) {
                </div>
                <div className="form-group pt-3">
                   <button 
-                     className="loginBtn btn btn-block"
+                     className="loginBtn btn btn-block firstFont"
                      type="button"
                      onClick={userLoginHandler}
-                     >login
+                     >SIGN IN
                   </button>
-                  <p className="registerText">
-                     Not a member? 
+                  <p className="registerText secondFont">
+                     Not yet a member? 
                      <span className="registerLink ml-2" onClick={props.toggleRegForm}>
-                        Sign up here
+                        Sign up here!
                      </span>
                   </p>
-                  </div>
+               </div>
             </form>
+            <SmallModal isOpen={openModal} toggle={toggleModal} content={modalContent} />
          </div>
       </React.Fragment>
    )

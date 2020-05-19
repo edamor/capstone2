@@ -2,15 +2,27 @@ small {
    color: red;
 }
 
+.regFormLabel {
+   color: #cefa05;
+   font-size: 2em;
+   text-align: center;
+}
+
 .regFormWrap {
    z-index: 20;
    border-radius: 7%;
-   width: 35%;
+   width: 37.5%;
    background-color: #000;
    border: #cefa05 1px solid;
    display: flex;
    align-items: center;
    justify-content: center;
+}
+
+.blankInputAlert {
+   visibility: hidden;
+   color: #ec1e1e;
+   font-size: 0.8em;
 }
 
 #regBtn {

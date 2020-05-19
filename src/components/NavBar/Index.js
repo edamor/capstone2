@@ -10,15 +10,18 @@ function Navbar(props) {
          <div className="navWrap d-flex w-100">
             <ul>
                <li>
+                  Home
+               </li>
+               <li>
                   Equipments
                </li>
                <li>
-                  Activities
+                  My Activity
                </li>
             </ul>
-            <button className="logoutNavBtn" onClick={props.logoutHandler}>
+            <p className="logoutNavBtn secondFont" onClick={props.logoutHandler}>
                logout
-            </button>
+            </p>
 
          </div>
       </React.Fragment>

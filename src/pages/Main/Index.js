@@ -1,13 +1,14 @@
 import React from "react";
-import { Redirect } from 'react-router-dom';
+import { Redirect, Route } from 'react-router-dom';
 import Navbar from '../../components/NavBar/Index';
+import WelcomeBox from '../../components/members/WelcomeMsg/Index';
+import ComingSoonBox from '../../components/Temp/Index';
+import './css/style.css';
 
 
 function MainPage(props) {
 
-   let logoutHandler = () => {
-      props.logoutHandler();
-   }
+   
 
    return (
       <React.Fragment>
@@ -15,7 +16,12 @@ function MainPage(props) {
             !props.isLoggedIn ? 
             <Redirect to="/" />
             :
-            <Navbar logoutHandler={props.logoutHandler} />
+            <div className="mainPageWrap">
+               <Navbar logoutHandler={props.logoutHandler} />
+               <Route path="/">
+                  <ComingSoonBox />
+               </Route>
+            </div>
          }
       </React.Fragment>
    )

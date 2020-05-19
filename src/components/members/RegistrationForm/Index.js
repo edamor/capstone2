@@ -217,101 +217,93 @@ function RegistrationForm(props) {
    
    return (
       <React.Fragment>
-      <div className="regFormWrap py-4">
-         <form className="col-12 col-md-8 mx-auto ">
-            <div className="form-group text-center">
-               <h2>Registration</h2>
+      <div className="regFormWrap py-4 secondFont">
+         <form className="regForm">
+            <div className="form-group">
+               <p className="regFormLabel">
+                  Member Registration
+               </p>
             </div>
-            <div className="form-group text-left">
-               <div>
-                  <input 
-                     className="form-control"
-                     type="text"
-                     id="username"
-                     autoComplete="off"
-                     onBlur={unValidationHandler}
-                     onChange={usernameChangeHandler}
-                     value={username}
-                     placeholder="Pick a unique username..."
-                  />
-                  <small id="regUsername" style={{ "visibility": "hidden" }}>
-                     *This field is required
-                  </small>
-               </div>
-               <div>
-                  <input 
-                     className="form-control"
-                     type="text"
-                     id="firstname"
-                     autoComplete="off"
-                     onBlur={fnValidationHandler}
-                     onChange={firstnameChangeHandler}
-                     value={first_name}
-                     placeholder="First Name..."
-                  />
-                  <small id="regFirstname" style={{ "visibility": "hidden" }}>
-                     *This field is required
-                  </small>
-               </div>
-               <div>
-                  <input 
-                     className="form-control"
-                     type="text"
-                     id="lastname"
-                     autoComplete="off"
-                     onBlur={lnValidationHandler}
-                     onChange={lastnameChangeHandler}
-                     value={last_name}
-                     placeholder="Last Name..."
-                  />
-                  <small id="regLastname" style={{ "visibility": "hidden" }}>
-                     *This field is required
-                  </small>
-               </div>
-               <div>
-                  <input 
-                     className="form-control"
-                     type="password"
-                     id="password"
-                     autoComplete="off"
-                     onBlur={pwValidationHandler}
-                     onChange={passwordChangeHandler}
-                     value={password}
-                     placeholder="Choose a password..."
-                  />
-                  <small id="regPassword" style={{ "visibility": "hidden" }}>
-                     *This field is required
-                  </small>
-               </div>
-               <div>
-                  <input 
-                     className="form-control"
-                     type="password"
-                     id="confirmpassword"
-                     autoComplete="off"
-                     onBlur={cpwValidationHandler}
-                     onChange={confirmPasswordChangeHandler}
-                     value={confirmpassword}
-                     placeholder="Confirm chosen password..."
-                  />
-                  <small id="regConfirmPW" style={{ "visibility": "hidden" }}>
-                     ***Passwords do not match
-                  </small>
-               </div>
+            <div className="form-group">
+               <input 
+                  className="form-control"
+                  type="text"
+                  id="username"
+                  autoComplete="off"
+                  onBlur={unValidationHandler}
+                  onChange={usernameChangeHandler}
+                  value={username}
+                  placeholder="Pick a unique username..."
+               />
+               <p id="regUsername" className="blankInputAlert">
+                  *This field is required
+               </p>
+               <input 
+                  className="form-control"
+                  type="text"
+                  id="firstname"
+                  autoComplete="off"
+                  onBlur={fnValidationHandler}
+                  onChange={firstnameChangeHandler}
+                  value={first_name}
+                  placeholder="First Name..."
+               />
+               <p id="regFirstname" className="blankInputAlert">
+                  *This field is required
+               </p>
+               <input 
+                  className="form-control"
+                  type="text"
+                  id="lastname"
+                  autoComplete="off"
+                  onBlur={lnValidationHandler}
+                  onChange={lastnameChangeHandler}
+                  value={last_name}
+                  placeholder="Last Name..."
+               />
+               <p id="regLastname" className="blankInputAlert">
+                  *This field is required
+               </p>
+               <input 
+                  className="form-control"
+                  type="password"
+                  id="password"
+                  autoComplete="off"
+                  onBlur={pwValidationHandler}
+                  onChange={passwordChangeHandler}
+                  value={password}
+                  placeholder="Choose a password..."
+               />
+               <p id="regPassword" className="blankInputAlert">
+                  *This field is required
+               </p>
+               <input 
+                  className="form-control"
+                  type="password"
+                  id="confirmpassword"
+                  autoComplete="off"
+                  onBlur={cpwValidationHandler}
+                  onChange={confirmPasswordChangeHandler}
+                  value={confirmpassword}
+                  placeholder="Confirm chosen password..."
+               />
+               <p id="regConfirmPW" className="blankInputAlert">
+                  ***Passwords do not match
+               </p>
             </div>
             <div className="form-group">
                <button 
-                  className="btn btn-block form-control"
+                  className="btn btn-block form-control firstFont"
                   id="regBtn"
                   onClick={registerBtnClickHandler}
                   disabled={validator}
                   type="button"
-                  >submit
+                  >CREATE ACCOUNT
                </button>
                <p className="registerText">
                   Already a member? 
                   <span className="registerLink ml-2" onClick={props.toggleRegForm}>
-                     Sign in here
+                     Sign in here!
                   </span>
                </p>
             </div>

@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import LoginForm from '../../components/LoginForm/Index';
 import RegisterMemberForm from '../../components/members/RegistrationForm/Index';
 import './css/style.css';
-import { Redirect, Route } from 'react-router-dom';
 
 
 function LoginPage(props) {

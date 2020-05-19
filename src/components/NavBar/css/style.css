@@ -1,5 +1,9 @@
 .navWrap {
-   background-color: #a9a9a9a9;
+   background-color: #cefa05;
+   padding-right: 3em;
+   padding-left: 3em;
+   padding-top: 0.5em;
+   position: fixed;
 }
 
 .navWrap ul {
@@ -8,10 +12,20 @@
 
 .navWrap ul li {
    display: inline-block;
+   margin-right: 2em;
+   color: #000;
+   font-weight: 500;
 }
 
 .logoutNavBtn {
    display: inline-block;
    margin-left: auto;
+   cursor: pointer;
+   color: #c9c9c9;
+   background-color: #fa0202da;
+   padding-right: 5px;
+   padding-left: 5px;
+   border-radius: 10px;
+   text-transform: uppercase;
 }
 

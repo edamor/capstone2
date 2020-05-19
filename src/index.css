@@ -7,3 +7,11 @@
 body {
   background: #000;
 }
+
+.firstFont {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.secondFont {
+  font-family: 'Roboto', sans-serif;
+}

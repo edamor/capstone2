@@ -1,0 +1,27 @@
+.comingSoonBox {
+   align-self: center;
+   justify-self: center;
+  
+   border-radius: 10px;
+   display: flex;
+   flex-direction: row;
+   background: rgba(0,0,0,0.7);
+   align-items: center;
+}
+
+.firstText, 
+.secondText {
+   font-size: 4em;
+   letter-spacing: 0.9em;
+   color: #fff;
+}
+
+.firstText {
+   text-align: left;
+}
+
+.secondText {
+   color: #cefa05;
+   text-align: center;
+   font-weight: 900;
+}

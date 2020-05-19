@@ -1,0 +1,9 @@
+.mainPageWrap {
+   height: 100vh;
+   background: url("../../../images/homePageBG-main.png");
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   display: flex;
+   justify-content: center;
+}
