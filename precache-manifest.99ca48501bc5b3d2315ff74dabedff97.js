@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ed901585c9aa7cfa89935e3341ea41a7",
+    "revision": "48266495116e9cd58237f1db9d3692b8",
     "url": "/capstone2/index.html"
   },
   {
-    "revision": "6a29e99c0ad432efad9f",
+    "revision": "3b5fa3976f336c2965d6",
     "url": "/capstone2/static/css/main.15916b10.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/capstone2/static/js/2.1826432d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "6a29e99c0ad432efad9f",
-    "url": "/capstone2/static/js/main.406fbc53.chunk.js"
+    "revision": "3b5fa3976f336c2965d6",
+    "url": "/capstone2/static/js/main.fa283e2a.chunk.js"
   },
   {
     "revision": "b116912798f9d1617f44",
