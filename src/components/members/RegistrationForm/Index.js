@@ -3,7 +3,7 @@ import SmallModal from '../../SmallModal/Index';
 import './css/style.css';
 
 function RegistrationForm(props) {
-   let usersAPI = "https://capstone2-090119.herokuapp.com/users/";
+   let usersAPI = "https://capstone2-090119.herokuapp.com/users/username/";
 
 
    let [first_name, setFirstname] = useState("");
