@@ -142,6 +142,9 @@ function RegistrationForm(props) {
                   "*This field is required";
             }
          })
+         .catch(e => {
+            console.log(e)
+         })
    }
 
    let usernameChangeHandler = (e) => {
