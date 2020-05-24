@@ -36,7 +36,7 @@ function LoginForm(props) {
          },
          body: JSON.stringify(user)
       })
-         .then(res => res)
+         .then(res => res.json())
          .then(data => {
             // localStorage.setItem("userRole", data.username);
             console.log(data);
