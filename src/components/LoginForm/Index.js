@@ -4,7 +4,7 @@ import './css/style.css';
 
 
 function LoginForm(props) {
-   let usersAPI = "https://capstone2-090119.herokuapp.com/users";
+   let usersLoginAPI = "https://capstone2-090119.herokuapp.com/users/login";
 
    let [username, setUsername] = useState("");
    let [password, setPassword] = useState("");
@@ -29,7 +29,7 @@ function LoginForm(props) {
          username,
          password
       }
-      fetch(usersAPI + "/login", {
+      fetch(usersLoginAPI, {
          method: 'post',
          headers: {
             'Content-type': 'application/json'

@@ -3,7 +3,7 @@ import SmallModal from '../../SmallModal/Index';
 import './css/style.css';
 
 function RegistrationForm(props) {
-   let usersAPI = "https://capstone2-090119.herokuapp.com/users/username/";
+   let usersAPI = "https://capstone2-090119.herokuapp.com/users/";
 
 
    let [first_name, setFirstname] = useState("");
@@ -126,7 +126,7 @@ function RegistrationForm(props) {
    }
 
    let checkIfUsernameExists = (un) => {
-      fetch( usersAPI + un)
+      fetch( usersAPI + "username/" + un)
          .then(res => res.json())
          .then(data => {
             setUsernameExists(data);
