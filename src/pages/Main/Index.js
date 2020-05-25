@@ -1,5 +1,5 @@
 import React from "react";
-import { Redirect, Route } from 'react-router-dom';
+import { Redirect, Route, Switch } from 'react-router-dom';
 import Navbar from '../../components/NavBar/Index';
 import WelcomeBox from '../../components/members/WelcomeMsg/Index';
 import ComingSoonBox from '../../components/Temp/Index';
@@ -18,9 +18,20 @@ function MainPage(props) {
             :
             <div className="mainPageWrap">
                <Navbar logoutHandler={props.logoutHandler} />
-               <Route path="/">
-                  <ComingSoonBox />
-               </Route>
+               <Switch>
+                  <Route path="/home">
+                     <ComingSoonBox />
+                     <h3>home</h3>
+                  </Route>
+                  <Route path="/equipment">
+                     <ComingSoonBox />
+                     <h3>equipments</h3>
+                  </Route>
+                  <Route path="/activity">
+                     <ComingSoonBox />
+                     <h3>activity</h3>
+                  </Route>
+               </Switch>
             </div>
          }
       </React.Fragment>
