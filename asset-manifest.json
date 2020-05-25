@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/capstone2/static/css/main.15916b10.chunk.css",
-    "main.js": "/capstone2/static/js/main.edaa15d9.chunk.js",
-    "main.js.map": "/capstone2/static/js/main.edaa15d9.chunk.js.map",
+    "main.js": "/capstone2/static/js/main.ce1a8225.chunk.js",
+    "main.js.map": "/capstone2/static/js/main.ce1a8225.chunk.js.map",
     "runtime-main.js": "/capstone2/static/js/runtime-main.d4bd986c.js",
     "runtime-main.js.map": "/capstone2/static/js/runtime-main.d4bd986c.js.map",
-    "static/js/2.1826432d.chunk.js": "/capstone2/static/js/2.1826432d.chunk.js",
-    "static/js/2.1826432d.chunk.js.map": "/capstone2/static/js/2.1826432d.chunk.js.map",
+    "static/js/2.0b70f46f.chunk.js": "/capstone2/static/js/2.0b70f46f.chunk.js",
+    "static/js/2.0b70f46f.chunk.js.map": "/capstone2/static/js/2.0b70f46f.chunk.js.map",
     "index.html": "/capstone2/index.html",
-    "precache-manifest.c6e76407f68b8565c861036c9e61ed1e.js": "/capstone2/precache-manifest.c6e76407f68b8565c861036c9e61ed1e.js",
+    "precache-manifest.f4dd7e83943118a9d6bf39813152bf19.js": "/capstone2/precache-manifest.f4dd7e83943118a9d6bf39813152bf19.js",
     "service-worker.js": "/capstone2/service-worker.js",
     "static/css/main.15916b10.chunk.css.map": "/capstone2/static/css/main.15916b10.chunk.css.map",
-    "static/js/2.1826432d.chunk.js.LICENSE.txt": "/capstone2/static/js/2.1826432d.chunk.js.LICENSE.txt",
+    "static/js/2.0b70f46f.chunk.js.LICENSE.txt": "/capstone2/static/js/2.0b70f46f.chunk.js.LICENSE.txt",
     "static/media/style.css": "/capstone2/static/media/loginPageBG-main.05eb6540.png"
   },
   "entrypoints": [
     "static/js/runtime-main.d4bd986c.js",
-    "static/js/2.1826432d.chunk.js",
+    "static/js/2.0b70f46f.chunk.js",
     "static/css/main.15916b10.chunk.css",
-    "static/js/main.edaa15d9.chunk.js"
+    "static/js/main.ce1a8225.chunk.js"
   ]
 }
