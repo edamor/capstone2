@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/capstone2/static/css/main.15916b10.chunk.css",
-    "main.js": "/capstone2/static/js/main.68686678.chunk.js",
-    "main.js.map": "/capstone2/static/js/main.68686678.chunk.js.map",
+    "main.js": "/capstone2/static/js/main.34aa1bac.chunk.js",
+    "main.js.map": "/capstone2/static/js/main.34aa1bac.chunk.js.map",
     "runtime-main.js": "/capstone2/static/js/runtime-main.d4bd986c.js",
     "runtime-main.js.map": "/capstone2/static/js/runtime-main.d4bd986c.js.map",
     "static/js/2.2beff31e.chunk.js": "/capstone2/static/js/2.2beff31e.chunk.js",
     "static/js/2.2beff31e.chunk.js.map": "/capstone2/static/js/2.2beff31e.chunk.js.map",
     "index.html": "/capstone2/index.html",
-    "precache-manifest.239f629a9e343f45ec17062ab13d1c8a.js": "/capstone2/precache-manifest.239f629a9e343f45ec17062ab13d1c8a.js",
+    "precache-manifest.d6738299a42ae4b63b8cad13579f5dc5.js": "/capstone2/precache-manifest.d6738299a42ae4b63b8cad13579f5dc5.js",
     "service-worker.js": "/capstone2/service-worker.js",
     "static/css/main.15916b10.chunk.css.map": "/capstone2/static/css/main.15916b10.chunk.css.map",
     "static/js/2.2beff31e.chunk.js.LICENSE.txt": "/capstone2/static/js/2.2beff31e.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.d4bd986c.js",
     "static/js/2.2beff31e.chunk.js",
     "static/css/main.15916b10.chunk.css",
-    "static/js/main.68686678.chunk.js"
+    "static/js/main.34aa1bac.chunk.js"
   ]
 }
