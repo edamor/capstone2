@@ -31,12 +31,15 @@ function App() {
           </Route>
           <Route path="/user">
             {
-              (props) =>
-              <MainPage
-                {...props}
-                logoutHandler={logoutHandler}
-                isLoggedIn={isLoggedIn}
-              />
+              isLoggedIn ?
+                (props) =>
+                <MainPage
+                  {...props}
+                  logoutHandler={logoutHandler}
+                  isLoggedIn={isLoggedIn}
+                />
+              :
+                <Redirect to ="/" />
             }
           </Route>
       </div>
